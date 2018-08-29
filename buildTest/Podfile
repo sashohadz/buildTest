@@ -3,9 +3,13 @@
 
 target 'buildTest' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+  use_frameworks!
     pod 'Leanplum-iOS-SDK'
     pod 'Leanplum-iOS-UIEditor'
     pod 'Leanplum-iOS-Location'
 
+end
+
+target 'buildTestTests' do
+    inherit! :search_paths
 end
